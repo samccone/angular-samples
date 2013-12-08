@@ -8,9 +8,13 @@
 
     <input type="text" ng-model="filter.text" placeholder="filter by name">
     <ul>
-      <li ng-repeat="m in monkeys | filter:filter.text">{{m.name}}</li>
+      <li ng-repeat="m in monkeys | filter:filter.text" class="name">
+       <b>{{m.name}}</b>
+        <a href="#/remove-monkey" ng-click="removeMonkey(m.name)">X</a>
+      </li>
     </ul>
   </div>
   <script src="monkey_list.js"></script>
   <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/lodash/dist/lodash.js"></script>
 </html>

@@ -12,4 +12,10 @@ function MonkeyList($scope) {
 
     $scope.monkey.text = '';
   }
+
+  $scope.removeMonkey = function(name) {
+    _.remove($scope.monkeys, function(v) {
+      return v.name === name;
+    });
+  }
 }
