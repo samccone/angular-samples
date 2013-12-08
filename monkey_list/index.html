@@ -1,0 +1,15 @@
+<html ng-app>
+  <div ng-controller="MonkeyList">
+    <form ng-submit="addMonkey()">
+      <h2> add a monkey</h2>
+      <input type="text" ng-model="monkey.text", placeholder="monkey name"/>
+      <input type="submit">
+    </form>
+
+    <ul>
+      <li ng-repeat="m in monkeys">{{m.name}}</li>
+    </ul>
+  </div>
+  <script src="monkey_list.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+</html>
