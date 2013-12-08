@@ -1,4 +1,4 @@
 angular samples
 ------
 
-`bower install angular`
+`bower install`
