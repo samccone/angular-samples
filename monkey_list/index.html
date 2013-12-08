@@ -6,8 +6,9 @@
       <input type="submit">
     </form>
 
+    <input type="text" ng-model="filter.text" placeholder="filter by name">
     <ul>
-      <li ng-repeat="m in monkeys">{{m.name}}</li>
+      <li ng-repeat="m in monkeys | filter:filter.text">{{m.name}}</li>
     </ul>
   </div>
   <script src="monkey_list.js"></script>
