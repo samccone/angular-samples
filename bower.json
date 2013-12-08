@@ -1,0 +1,22 @@
+{
+  "name": "angular-samples",
+  "version": "0.0.0",
+  "homepage": "https://github.com/samccone/angular-samples",
+  "authors": [
+    "Sam Saccone <samccone@gmail.com>"
+  ],
+  "description": "a collection of angularjs samples",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.4",
+    "lodash": "~2.4.1"
+  }
+}
