@@ -1,0 +1,10 @@
+<h2> Track List </h2>
+
+<div class="loading" ng-if="loading">loading</div>
+
+<div ng-if="tracks.length">
+  <ul>
+    <li ng-repeat="t in tracks">{{t}}</li>
+  </ul>
+  <button ng-if="!loading" ng-click="loadMoreTracks()"> load more </button>
+</div>

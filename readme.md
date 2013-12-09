@@ -12,3 +12,6 @@ angular samples
 
 ###LeChuck Gallery
 ![](https://i.cloudup.com/s7jEkoEM1W.gif)
+
+###Sam and Max
+![](https://i.cloudup.com/dHeZhRsUpQ.gif)
