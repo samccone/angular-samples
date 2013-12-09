@@ -1,4 +1,4 @@
-window.controllers = window.controllers || angular.module 'controllers', []
+window.controllers ||= angular.module 'controllers', []
 
 controllers.controller 'tracks', ['$scope', '$timeout', ($scope, $timeout) ->
   $scope.tracks   = []

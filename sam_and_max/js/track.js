@@ -1,5 +1,5 @@
 (function() {
-  window.controllers = window.controllers || angular.module('controllers', []);
+  window.controllers || (window.controllers = angular.module('controllers', []));
 
   controllers.controller('track', [
     '$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {

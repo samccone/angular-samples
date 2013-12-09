@@ -1,4 +1,4 @@
-window.controllers = window.controllers || angular.module 'controllers', []
+window.controllers ||= angular.module 'controllers', []
 
 controllers.controller 'track', ['$scope', '$routeParams', '$http', ($scope, $routeParams, $http) ->
   $scope.loading  = true

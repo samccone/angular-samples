@@ -1,5 +1,5 @@
 (function() {
-  window.controllers = window.controllers || angular.module('controllers', []);
+  window.controllers || (window.controllers = angular.module('controllers', []));
 
   controllers.controller('tracks', [
     '$scope', '$timeout', function($scope, $timeout) {
