@@ -8,3 +8,5 @@ A simple example demonstrating a multipage app with view partials
 
 `npm install`
 `grunt watch`
+
+![](https://i.cloudup.com/CmYK0gCWT5.gif)
