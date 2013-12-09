@@ -1,0 +1,9 @@
+<html ng-app="lechuckApp">
+  <div ng-controller="lechuckGallery">
+    <img ng-repeat="i in images" ng-src={{i.tbUrl}}>
+    <button ng-click="nextPage()">load more </button>
+  </div>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/lodash/dist/lodash.js"></script>
+  <script src="js/lechuck_gallery.js"></script>
+</html>
