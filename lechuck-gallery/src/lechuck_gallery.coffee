@@ -1,7 +1,7 @@
 window.lecheckApp = angular.module 'lechuckApp', [->
 ]
 
-lecheckApp.controller 'lechuckGallery', ['$scope', '$http', ($scope, $http) ->
+lecheckApp.controller 'lechuckGallery', ['$scope', 'imageSearch', ($scope, imageSearch) ->
   $scope.currentPage = 0
 
   $scope.images = []
@@ -10,10 +10,7 @@ lecheckApp.controller 'lechuckGallery', ['$scope', '$http', ($scope, $http) ->
     loadImages()
 
   loadImages = ->
-    $http(
-      method: 'JSONP'
-      url: "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=lechuck%20monkey%20island&callback=JSON_CALLBACK&start=#{$scope.currentPage * 4}"
-    ).success (d) ->
+    imageSearch("lechuck monkey island", $scope.currentPage).success (d) ->
       $scope.images = $scope.images.concat(d.responseData.results)
 
   loadImages()
