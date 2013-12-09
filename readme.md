@@ -4,7 +4,7 @@ angular samples
 `bower install`
 
 
-###[](monkey_list)Monkey List
+###[](monkey_list/)Monkey List
 ![](https://i.cloudup.com/liuHJmGRU8.gif)
 
 ###Islands
