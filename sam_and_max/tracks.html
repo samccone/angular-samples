@@ -4,7 +4,9 @@
 
 <div ng-if="tracks.length">
   <ul>
-    <li ng-repeat="t in tracks">{{t}}</li>
+    <li ng-repeat="t in tracks" >
+      <a href="#/tracks/{{t}}">{{t}}</a>
+    </li>
   </ul>
   <button ng-if="!loading" ng-click="loadMoreTracks()"> load more </button>
 </div>
